@@ -1,0 +1,38 @@
+.btn {
+  padding: 1em 2em;
+  background: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+  border: 0;
+}
+.btn-primary {
+  background: var(--global-color-2);
+  color: #fff;
+  &:hover {
+    background: var(--global-color-2-hover);
+  }
+}
+.btn-secondary:hover {
+  background: #d8d8d8;
+}
+.btn-info {
+  background: var(--global-color-5);
+  color: #fff;
+  &:hover {
+    background: var(--global-color-5-hover);
+  }
+}
+.btn-danger {
+  background: var(--global-color-1);
+  color: #fff;
+  &:hover {
+    background: var(--global-color-1-hover);
+  }
+}

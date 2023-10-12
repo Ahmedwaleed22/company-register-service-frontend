@@ -1,0 +1,57 @@
+.dashboard-layout-container .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3em auto;
+  gap: 2em;
+  .children {
+    width: 100%;
+  }
+}
+.dashboard-title-container, .dashboard-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: .5em;
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    border-radius: 5px;
+  }
+}
+.dashboard-title {
+  margin-bottom: .5em;
+}
+.table-container {
+  overflow: scroll;
+}
+.dahsboard-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    background: var(--global-color-1);
+    color: #fff;
+    text-align: center;
+  }
+
+  &, th, td {
+    border: 1px solid var(--border-color);
+  }
+
+  td {
+    padding: 1em .5em;
+  }
+
+  button {
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  /* Add scroll for smaller screens */
+  @media (max-width: 768px) {
+    overflow-x: auto;
+  }
+}

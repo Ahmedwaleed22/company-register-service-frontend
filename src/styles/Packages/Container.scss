@@ -1,0 +1,22 @@
+.packages-container {
+  padding: 1em var(--container-horizontal-padding) 1em;
+  text-align: center; /* Center the text */
+  
+  @media (max-width: 768px) {
+    padding: 1.5em;
+  }
+
+  .container-title {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Center packages horizontally */
+    gap: 1em;
+    padding: 1em 0; /* Adjust padding for spacing */
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}

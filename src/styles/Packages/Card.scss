@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.package {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  max-width: 405px;
+  header {
+    height: 150px;
+    background-position: center !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    .mark {
+      position: absolute;
+      top: 23px;
+      right: -51px;
+      background: var(--global-color-1);
+      font-size: 1rem;
+      padding: 0.5em 3em;
+      transform: rotate(45deg);
+    }
+  }
+  .price-container {
+    text-align: center;
+    margin-bottom: 2em;
+    .discount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      margin: 1em 0 .5em;
+      .oldPrice {
+        text-decoration: line-through;
+        color: var(--global-color-4);
+        font-size: 1.4em;
+      }
+      .percentage {
+        background: var(--global-color-2);
+        color: #fff;
+        padding: .2em 1em;
+        border-radius: 20px;
+      }
+    }
+    .price {
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--global-color-2);
+    }
+    .note {
+      color: var(--global-color-4);
+      margin-top: .5em;
+      font-size: .8em;
+      &::before {
+        content: "*";
+        color: var(--global-color-1);
+        margin-right: .3em;
+      }
+    }
+  }
+  .features {
+    padding: 0 1em;
+    margin-bottom: 3em;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      list-style-type: none;
+      li {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        text-align: initial;
+        .arrow {
+          display: flex;
+          align-items: center;
+          color: var(--global-color-1);
+        }
+      }
+    }
+  }
+  .action {
+    margin-top: auto;
+    .btn {
+      width: 90%;
+      margin: 0 auto 1em;
+    }
+  }
+}

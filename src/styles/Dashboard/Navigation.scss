@@ -1,0 +1,30 @@
+.navigation {
+  border: 1px solid #dddd;
+  border-radius: 10px;
+  overflow: hidden;
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      padding: 1.3em 2em;
+      cursor: pointer;
+      flex: 1 1 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.1rem;
+      &:hover {
+        background: var(--global-color-1);
+        color: #fff;
+      }
+      &.active {
+        background: var(--global-color-1);
+        color: #fff;
+      }
+    }
+    @media (max-width: 1120px) {
+      flex-direction: column;
+    }
+  }
+}

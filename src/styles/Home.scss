@@ -1,0 +1,127 @@
+#showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--container-horizontal-padding);
+  margin-bottom: 5rem;
+  .text-container {
+    .text {
+      max-width: 500px;
+      margin-bottom: 2.5em;
+      .title {
+        text-transform: capitalize;
+        font-size: 3rem;
+        margin-bottom: .2em;
+      }
+      .description {
+        font-size: 1.2rem;
+        color: var(--global-color-3);
+      }
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .btn {
+        width: 170px;
+      }
+      .reviews {
+        height: 100px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .image-container {
+    .image {
+      height: 450px;
+      width: 450px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 5px solid var(--global-color-2);
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .overlay {
+        position: absolute;
+        inset: 0;
+        // background: radial-gradient(farthest-corner at 20%, transparent, black);
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 2em;
+    padding: 1em 1.5em;
+    text-align: center;
+    .text-container {
+      .text .title {
+        font-size: 2rem;
+      }
+      .actions {
+        gap: 1em;
+        .reviews img {
+          object-fit: contain;
+        }
+      }
+    }
+    .image-container {
+      .image {
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 1em;
+  }
+}
+section.reviews {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../Images/city.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5em 0;
+  .text {
+    max-width: 1200px;
+    text-align: center;
+    .title {
+      font-size: 3rem;
+      margin-bottom: .5em;
+    }
+    .paragraph {
+      font-size: 1.5rem;
+      color: #d1d1d1;
+    }
+    .google-review-link {
+      width: 200px;
+      margin: 2em auto;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.loading-container {
+  width: 100%;
+}
+.reviews-slider {
+  margin-top: 3em;
+}
+.review-card {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

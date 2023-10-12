@@ -1,0 +1,24 @@
+.howitworks-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+  .image {
+    margin-bottom: .5em;
+    position: relative;
+  }
+  .title {
+    margin-bottom: .3em;
+  }
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+.how-it-works-arrow {
+  font-size: 3rem;
+  color: var(--global-color-1);
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

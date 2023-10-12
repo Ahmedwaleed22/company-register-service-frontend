@@ -1,0 +1,63 @@
+$borderRadius: 10px;
+
+.login-container {
+  max-width: 600px;
+  margin: 1.5em auto 3em;
+  text-align: center;
+  padding: 0 1.5em;
+  .title-container {
+    margin-bottom: 2em;
+    h1 {
+      font-size: 2.7rem;
+    }
+    p {
+      color: #424242dd;
+      font-size: 1.2rem;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .form-group {
+      display: flex;
+      input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #d4d4d4;
+        border-left: 0;
+        padding: 0 10px;
+        border-top-right-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        font-size: 1em;
+      }
+      .icon {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--global-color-1);
+        color: #fff;
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+      }
+    }
+    button {
+      width: 100%;
+      border-radius: $borderRadius;
+      font-size: 1em;
+      padding: .8em;
+    }
+  }
+  .action {
+    margin-top: 1em;
+    text-align: center;
+    color: var(--global-color-2);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--global-color-2-hover);
+    }
+  }
+}
